@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/maxsale/static/css/main.16a6d44f.css",
+    "main.js": "/maxsale/static/js/main.2eb1958e.js",
+    "static/js/787.5482c7fb.chunk.js": "/maxsale/static/js/787.5482c7fb.chunk.js",
+    "static/media/boxicons.svg": "/maxsale/static/media/boxicons.17f6cb4eef77f07f2caa.svg",
+    "static/media/boxicons.eot": "/maxsale/static/media/boxicons.dfc882ec9689f820c7c9.eot",
+    "static/media/boxicons.woff": "/maxsale/static/media/boxicons.1a7e2e2bf3a855e674d4.woff",
+    "static/media/boxicons.ttf": "/maxsale/static/media/boxicons.22afc8ee5cfc540cddff.ttf",
+    "static/media/boxicons.woff2": "/maxsale/static/media/boxicons.60f603cccbdff82a523c.woff2",
+    "static/media/logo.svg": "/maxsale/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/maxsale/index.html",
+    "main.16a6d44f.css.map": "/maxsale/static/css/main.16a6d44f.css.map",
+    "main.2eb1958e.js.map": "/maxsale/static/js/main.2eb1958e.js.map",
+    "787.5482c7fb.chunk.js.map": "/maxsale/static/js/787.5482c7fb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.16a6d44f.css",
+    "static/js/main.2eb1958e.js"
+  ]
+}
