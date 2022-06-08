@@ -1,0 +1,890 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.sidebar{
+  position: fixed;
+  top: 15;
+  left: 0;
+  background: #135D74; 
+  /* background: #11101d;  */
+  height: 100%;
+  width: 260px;
+   /* background: #827db4; */
+}
+.sidebar .logo-details{
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  
+  } 
+.sidebar .logo-details i{
+font-size: 30px;
+color: #fff;
+height: 50px;
+min-width: 78px;
+text-align: center;
+line-height: 50px;
+
+}
+.sidebar .logo-details .logo_name{
+  font-size: 22px;
+  color: #fff;
+  font-weight: 600;
+  }
+  .sidebar .nav-links{
+    height: 100%;
+    padding-top: 30px;
+    /*******************************************************************************/
+    margin-left: -30PX;
+    margin-right: 30PX;
+  }
+
+  .sidebar .nav-links li{
+    list-style: none;
+    position: relative;
+     transition: all 0.4s ease; 
+
+  }
+  .sidebar .nav-links li:hover {
+    /* background: #1d1b31; */
+    background: #003d4f;
+      
+  }
+
+  .sidebar .nav-links li .iocn-link{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .sidebar .nav-links li i{
+    height: 50px;
+    min-width: 78px;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    font-size: 20px;
+  }
+
+  .sidebar .nav-links li img{
+    color: #fff;
+   
+  }
+  .sidebar .nav-links li .sub-menu{
+    padding: 6px 6px 14px 80px;
+    margin-top: -10px;
+     /* background: #1d1b31;  */
+     background: rgb(55, 83, 82); 
+     /* display: none;  */
+
+  }
+
+   /* .sidebar .nav-links li.showMenu .sub-menu{
+    display: block;
+
+  }  */
+
+  .sidebar .nav-links li .sub-menu a{ 
+    color: #fff;
+    font-size: 15px;
+    padding: 5px 0;
+     white-space: nowrap; 
+     opacity: 0.6;
+    transition: all 0.3s sease;
+     
+  }
+  .sidebar .nav-links li .sub-menu a:hover{
+   opacity: 1;
+  }
+  
+  .sidebar .nav-links li a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+  .sidebar .nav-links li a .link_name{
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+
+  }
+
+  .sidebar.close .nav-links li .sub-menu{
+  position: absolute;
+   left: 100%;
+  top: -10px;
+  margin-top: 0;
+  padding:  10px 20px;
+  border-radius: 0 6px 6px 0;
+  transition: all 0.4s ease;  
+  opacity: 0;
+  pointer-events: none;
+
+  }
+  .sidebar.close .nav-links li:hover .sub-menu{
+     top: 0;
+     opacity: 1;
+     pointer-events: auto;
+
+
+  }
+  .sidebar .nav-links li .sub-menu .link_name{
+   display: none;
+  } 
+
+  .sidebar.close .nav-links li .sub-menu .link_name{
+    font-size: 18px;
+    opacity: 1;
+     display: block; 
+
+  }
+
+  .sidebar .nav-links li .sub-menu .blank{
+    opacity: 1;
+    pointer-events: auto; 
+    padding: 3px 20px 6px 16px;
+
+  }
+
+  .sidebar .nav-links li:hover .sub-menu .blank{
+     top: 50%;
+     transform: translate(-50%);
+  }
+
+  .sidebar .profile-details{
+    /* position: fixed;  bon*/
+    position: relative;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background: #1d1b31; */
+    background: #003d4f;
+  
+    padding: 6px 0;
+    margin-left: 18px;
+    margin-top:140px;
+
+  }
+
+  .sidebar .profile-details .profile-content{
+    display: flex;
+    align-items: center;
+
+  }
+
+  .sidebar .profile-details img{
+    height: 52px;
+    width: 52px;
+    object-fit: cover;
+    border-radius: 16px;
+    margin: 0 14px 0 12px;
+    background: #1d1b31;
+    padding: 5px;
+  
+  }
+
+  .sidebar .profile-details .profile-name,
+  .sidebar .profile-details .job{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  
+.sidebar .profile-details .job{
+  font-size: 12px;
+}
+
+.utiGau {
+  float: left;
+  width: 376px;
+  margin-left: 260px;
+  height: 612px;
+   /* border: 1px solid black;  */
+  margin-right: 0px;
+  text-align: center;
+}
+
+.utiGauNotedebit{
+  float: left;
+  padding: 20px;
+  margin-top: 20px;
+  width: 376px;
+  margin-left: 290px;
+  height: 512px;
+    border: 1px solid #ACD3F2;  
+  margin-right: 0px;
+  text-align: center;
+}
+
+.utiGauEnc {
+  float: left;
+  padding: 20px;
+  margin-top: 20px;
+  width: 576px;
+  margin-left: 360px;
+  height: 512px;
+    border: 1px solid #ACD3F2;  
+  margin-right: 0px;
+  text-align: center;
+}
+
+.utiDroiNotedebit {
+  float: left;
+  padding: 20px;
+  width: 651px;
+  margin-top: 20px;
+  margin-left: 20px;
+
+  border: 1px solid #ACD3F2;  
+  text-align: center;
+}
+
+.situationpersonnel {
+  float: left;
+  padding: 20px;
+  width: 1051px;
+  margin-top: 20px;
+  margin-left: 270px;
+  /* height: 512px; */
+  border: 1px solid #ACD3F2;  
+  text-align: center;
+}
+
+
+.utiDroi {
+  float: left;
+  width: 711px;
+  height: 512px;
+  /* border: 1px solid red; */
+  text-align: center;
+}
+
+.utiDroiEnc {
+  float: left;
+  width: 211px;
+  height: 512px;
+  /* border: 1px solid red; */
+  text-align: center;
+}
+
+.utiBas {
+  float: left;
+  width: 1103px;
+  margin-left: 262px;
+  height: 95px;
+  /* border: 1px solid green; */
+  background: #D9EAFF;
+  text-align: center;
+}
+
+.utiBastarif {
+  float: left;
+  width: 1103px;
+  margin-left: 262px;
+  height: 65px;
+  /* border: 1px solid green; */
+  background: #D9EAFF;
+  text-align: center;
+}
+
+.gpeut {
+  width: 1000px;
+  font-weight: bold;
+  height: 30px;
+  background-color: #D8EAFF;
+   border: 1px solid #ACD3F2; 
+  text-align: left;
+}
+
+
+.gpepage {
+  width: 1000px;
+  font-weight: bold;
+  height: 30px;
+  background-color: #D8EAFF;
+   border: 1px solid #ACD3F2; 
+  text-align: left;
+}
+
+.gpesite {
+  width: 1000px;
+  font-weight: bold;
+  height: 30px;
+  /* border: 1px solid blue; */
+  text-align: left;
+}
+
+.gpesitetarif {
+  width: 1000px;
+  font-weight: bold;
+  height: 30px;
+   border: 1px solid #ACD3F2; 
+  text-align: left;
+}
+
+
+.btdelete {
+  background-color: red;
+  color:white;
+  margin-right: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btdelete:hover {
+  font-size: 20px;
+}
+
+
+.btupdate {
+  background-color: green;
+  color:white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btupdate:hover {
+  font-size: 20px;
+}
+
+.btdetail {
+  background-color: #135D74;
+  text-decoration: none;
+  color:white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btdetail:hover {
+  font-size: 20px;
+}
+
+
+.topproduit {
+  float: left;
+  width: 1105px;
+  margin-left: 260px;
+  height: 42px;
+ 
+  background-color: #D8EAFF;
+   border: 1px solid #ACD3F2; 
+  margin-right: 0px;
+  text-align: left;
+  color: black;
+  font-weight: bold;
+}
+
+
+.milieuprodui {
+  float: left;
+  width: 1105px;
+  margin-left: 260px;
+  height: 142px;
+  margin-top: -14px;
+  background-color: #D8EAFF;
+   border: 1px solid #ACD3F2; 
+  margin-right: 0px;
+  text-align: left;
+  color: black;
+ 
+}
+
+
+.basprodui {
+  float: left;
+  width: 1105px;
+  margin-left: 260px;
+  /* height: 742px; */
+  /* background-color: #D8EAFF; */
+  /*  border: 1px solid #ACD3F2;  */
+
+  text-align: left;
+  color: black;
+ 
+}
+
+.basproduiEtattransaction {
+  float: left;
+  width: 1105px;
+  margin-left: 260px;
+  margin-top: -30px;
+  /* height: 742px; */
+  /* background-color: #D8EAFF; */
+    /* border: 1px solid blue;   */
+
+  text-align: left;
+  color: black;
+ 
+}
+
+
+
+#inputqtephy
+{
+background-color:#B5DEFF;
+ 
+border: 0px solid #ACD3F2
+}
+
+
+#inputqtephy:hover
+{
+background-color:whitesmoke;
+}
+
+
+#inputqtephy:active
+{
+background-color:whitesmoke;
+}
+
+
+.basproduiniventaire {
+  margin-top: 0px;
+  float: left;
+  width: 1088px;
+  margin-left: 260px;
+  /* height: 742px; */
+  /* background-color: #D8EAFF; */
+   border: 1px solid #ACD3F2; 
+
+  text-align: left;
+  color: black;
+ 
+}
+
+.plusbasproduit {
+  float: left;
+  /* display: flex; */
+  width: 1088px;
+  margin-top: -18px;
+  margin-left: 260px;
+  height: 42px;
+  background-color: #D8EAFF;
+   border: 1px solid #ACD3F2; 
+  text-align: left;
+  color: black;
+  font-weight: bold;
+}
+
+.plusbasproduitgam {
+  float: left;
+  /* display: flex; */
+  width: 1088px;
+  margin-top: -18px;
+  margin-left: 260px;
+  height: 42px;
+  margin-top: 50px;
+  background-color: #D8EAFF;
+   border: 1px solid #ACD3F2; 
+  text-align: left;
+  color: black;
+  font-weight: bold;
+}
+.linkgamm{
+  text-decoration: none;
+}
+
+
+.topgamme {
+  float: left;
+  width: 1105px;
+  margin-left: 260px;
+  height: 42px;
+  background-color: #D8EAFF;
+   border: 1px solid #ACD3F2; 
+  margin-right: 0px;
+  text-align: left;
+  color: black;
+  font-weight: bold;
+}
+
+.topuser {
+  float: left;
+  width: 1105px;
+  margin-left: 260px;
+  height: 42px;
+  background-color: #D8EAFF;
+   border: 1px solid #ACD3F2; 
+  margin-right: 0px;
+  text-align: left;
+  color: black;
+  font-weight: bold;
+}
+
+.gammModeencai {
+  float: left;
+  width: 410px;
+  margin-left: 260px;
+  height: 512px;
+  /* border: 1px solid #ACD3F2;  */
+}
+.gammGauche {
+  float: left;
+  width: 410px;
+  margin-left: 260px;
+  height: 512px;
+  /* border: 1px solid #ACD3F2;  */
+}
+
+.produitTarifGauch {
+  float: left;
+  width: 410px;
+  margin-left: 260px;
+  height: 512px;
+  /* border: 1px solid #ACD3F2;  */
+}
+
+.gammGau {
+  float: left;
+  width: 410px;
+  margin-left: 260px;
+  height: 512px;
+  border: 1px solid #ACD3F2; 
+}
+
+.tarifGauc {
+  float: left;
+  width: 410px;
+  margin-left: 260px;
+  height: 512px;
+/*   border: 1px solid #ACD3F2;  */
+}
+
+.typedocGauch {
+  float: left;
+  width: 410px;
+  margin-left: 260px;
+  height: 512px;
+  /* border: 1px solid #ACD3F2;  */
+}
+
+.userdepGauch {
+  float: left;
+  width: 410px;
+  margin-left: 260px;
+  height: 512px;
+/*   border: 1px solid #ACD3F2;  */
+}
+
+.depotGau {
+  float: left;
+  width: 410px;
+  margin-left: 260px;
+  height: 512px;
+ /*  border: 1px solid #ACD3F2;  */
+}
+
+
+.depotDroit {
+  float: left;
+  width: 673px;
+  
+  text-align: center;
+}
+
+.gammDroite {
+  float: left;
+  width: 663px;
+/*   border: 1px solid #ACD3F2;  */
+  text-align: center;
+}
+
+.userdepoDroit {
+  float: left;
+  width: 663px;
+/*   border: 1px solid #ACD3F2;  */
+  text-align: center;
+}
+
+.produitarifDroi {
+  float: left;
+  width: 663px;
+/*   border: 1px solid #ACD3F2;  */
+  text-align: center;
+}
+
+.gammDroi {
+  float: left;
+  width: 663px;
+  border: 1px solid #ACD3F2; 
+  text-align: center;
+}
+
+.tarifDroi {
+  float: left;
+  width: 663px;
+  /* border: 1px solid #ACD3F2;  */
+  text-align: center;
+}
+
+.typdocuDroit {
+  float: left;
+  width: 663px;
+  /* border: 1px solid #ACD3F2;  */
+  text-align: center;
+}
+
+.modeencaiDroit {
+  float: left;
+  width: 663px;
+  /* border: 1px solid #ACD3F2;  */
+  text-align: center;
+}
+
+.menu {
+  float: left;
+  width: 1103px;
+  margin-left: 260px;
+  /* border: 1px solid #ACD3F2;  */
+  text-align: center;
+}
+
+
+.profilGauUpdate {
+  float: left;
+  width: 900px;
+  margin-left: 280px;
+  /* height: 1212px; */
+  border: 1px solid #ACD3F2; 
+
+}
+
+
+.profilGau {
+  float: left;
+  width: 500px;
+  margin-left: 260px;
+  /* height: 1212px; */
+  border: 1px solid #ACD3F2; 
+
+}
+
+
+.ventegauch {
+  float: left;
+  width: 240px;
+  margin-top: 30px;
+  margin-left: 5px;
+  /*  height: 512px;  */
+  border: 0px solid #ACD3F2; 
+
+}
+.ventegauchupdate {
+  float: left;
+  width: 240px;
+  margin-top: 30px;
+  margin-left: 5px;
+  /*  height: 512px;  */
+  /* border: 1px solid #ACD3F2;  */
+
+}
+.caissedroit {
+  float: left;
+  width: 240px;
+  margin-top: 30px;
+  margin-left: 5px;
+  /*  height: 212px; */ 
+  border: 0px solid #ACD3F2; 
+
+}
+.caissedroitupdate {
+  float: left;
+  width: 240px;
+  margin-top: 30px;
+  margin-left: 5px;
+  /*  height: 212px; */ 
+  border: 0px solid #ACD3F2; 
+
+}
+
+ .stockgauche {
+  float: left;
+  width: 240px;
+  margin-top: 30px;
+  margin-left: 5px;
+  /*  height: 212px; */ 
+  /* border: 1px solid #ACD3F2;  */
+
+ } 
+ .parametredroit {
+  float: left;
+  width: 240px;
+  margin-top: 30px;
+  margin-left: 5px;
+  /*  height: 212px; */ 
+  border: 0px solid #ACD3F2; 
+
+}
+
+ .parametredroitupdate {
+  float: left;
+  width: 240px;
+  margin-top: 30px;
+  margin-left: 5px;
+  /*  height: 212px; */ 
+  border: 0px solid #ACD3F2; 
+
+}
+
+.rapportdroit{
+  float: right;
+  width: 240px;
+  margin-top: 30px;
+  margin-left: 5px;
+  /*  height: 212px; */ 
+  border: 0px solid #ACD3F2; 
+
+}
+.rapportdroitupdate{
+  float: left;
+  width: 240px;
+  margin-top: 30px;
+  margin-left: 5px;
+  /*  height: 212px; */ 
+  border: 0px solid #ACD3F2; 
+
+}
+
+
+
+.profilDroi {
+  float: left;
+  width: 583px;
+  border: 1px solid #ACD3F2; 
+  text-align: center;
+}
+
+
+
+
+/* Google fonts import link */
+
+.App {
+  text-align: center;
+}
+
+.accueil {
+  background-color: #003d4f;
+  min-height: 100vh;
+  margin-top: 0px;
+
+  justify-content: center;
+
+  color: white;
+}
+
+.foo {
+  background-color: #135d74;
+  margin-top: 123px;
+
+  height: 92px;
+
+  color: white;
+}
+
+.nav{
+  background-color: #135d74;
+  float: right;
+}
+
+
+p {
+  text-align: center;
+  float: left;
+  font-size: 20px;
+  margin-top: 400px;
+  margin-left: 530px;
+ 
+  font-family: 'Times New Roman', Times, serif
+
+
+}
+
+.conn{
+margin-right: 0px;
+  float: inline-start;
+  margin-top: 10px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.header {
+  background-color: whitesmoke;
+font-size: 40px;
+font-weight: bold;
+text-align: center;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+  height: 50px;
+  margin-bottom: 0px;
+
+  color: #135d74;
+
+}
+
+.navbar_warapper a{
+  padding-left: 30px;
+}
+.nav-link {
+  font-size: 18px;
+  float:right;
+  margin-top: -55px;
+  margin-right: 20px;
+}
+
+.copyright {
+  margin-top: 30px;
+  float: left;
+}
+
+
+.max{
+  text-align: center;
+  float: left;
+  font-size: 20px;
+  margin-left: 530px;
+ 
+  font-family: 'Times New Roman', Times, serif
+
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+  background-color: #9ab5bd;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
