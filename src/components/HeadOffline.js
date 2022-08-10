@@ -17,7 +17,7 @@ function HeadOffline() {
     return (
 
         <div className="header">
-            <span style={{marginRight:'300px', marginLeft:'300px'}}>MAX SOLUTION </span>
+            <span style={{marginRight:'300px', marginLeft:'300px'}}>BLESSING PETROLEUM </span>
             {
 
                 localStorage.getItem("user-info") ?

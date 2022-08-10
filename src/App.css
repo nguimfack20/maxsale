@@ -10,7 +10,7 @@
   position: fixed;
   top: 15;
   left: 0;
-  background: #135D74; 
+  background: #c21616; 
   /* background: #11101d;  */
   height: 100%;
   width: 260px;
@@ -39,7 +39,7 @@ line-height: 50px;
   }
   .sidebar .nav-links{
     height: 100%;
-    padding-top: 30px;
+    padding-top: 90px;
     /*******************************************************************************/
     margin-left: -30PX;
     margin-right: 30PX;
@@ -53,7 +53,9 @@ line-height: 50px;
   }
   .sidebar .nav-links li:hover {
     /* background: #1d1b31; */
-    background: #003d4f;
+    /* background: #003d4f; */
+    background: #6e0606;
+
       
   }
 
@@ -80,7 +82,8 @@ line-height: 50px;
     padding: 6px 6px 14px 80px;
     margin-top: -10px;
      /* background: #1d1b31;  */
-     background: rgb(55, 83, 82); 
+     /* background: rgb(55, 83, 82);  */
+     background: #6E0606
      /* display: none;  */
 
   }
@@ -165,7 +168,7 @@ line-height: 50px;
     align-items: center;
     justify-content: space-between;
     /* background: #1d1b31; */
-    background: #003d4f;
+    background: #6e0606;
   
     padding: 6px 0;
     margin-left: 18px;
@@ -185,7 +188,8 @@ line-height: 50px;
     object-fit: cover;
     border-radius: 16px;
     margin: 0 14px 0 12px;
-    background: #1d1b31;
+    /* //background: #1d1b31; */
+    background: #c21616;
     padding: 5px;
   
   }
@@ -204,6 +208,49 @@ line-height: 50px;
 .utiGau {
   float: left;
   width: 376px;
+  margin-left: 260px;
+  height: 612px;
+   /* border: 1px solid black;  */
+  margin-right: 0px;
+  text-align: center;
+}
+
+
+/* .table 
+{
+   overflow: auto;
+   overflow-y: auto;
+   height: 100px;
+   font-size: '10px';
+   color: red;
+} */
+/* Table tbody, Table thead
+{
+    display: block;
+}
+
+Table tbody{
+  overflow: auto;
+  height: 100px;
+}
+
+Table {
+  width: 350px; 
+} */
+
+
+
+
+
+
+
+
+
+
+
+.utiGauEntreeSortie {
+  float: left;
+  width: 676px;
   margin-left: 260px;
   height: 612px;
    /* border: 1px solid black;  */
@@ -364,19 +411,7 @@ line-height: 50px;
 }
 
 
-.topproduit {
-  float: left;
-  width: 1105px;
-  margin-left: 260px;
-  height: 42px;
- 
-  background-color: #D8EAFF;
-   border: 1px solid #ACD3F2; 
-  margin-right: 0px;
-  text-align: left;
-  color: black;
-  font-weight: bold;
-}
+
 
 
 .milieuprodui {
@@ -385,8 +420,8 @@ line-height: 50px;
   margin-left: 260px;
   height: 142px;
   margin-top: -14px;
-  background-color: #D8EAFF;
-   border: 1px solid #ACD3F2; 
+  background-color: whitesmoke;
+   border: 1px solid #f2acac; 
   margin-right: 0px;
   text-align: left;
   color: black;
@@ -457,6 +492,31 @@ background-color:whitesmoke;
  
 }
 
+
+.basstock {
+  margin-top: 0px;
+  float: left;
+  width: 600px;
+  margin-left: 260px;
+  /* height: 742px; */
+  /* background-color: #D8EAFF; */
+   border: 1px solid #ACD3F2; 
+
+  text-align: left;
+  color: black;
+ 
+}
+.historique{
+  margin-top: -590px;
+  float: left;
+  width: 478px;
+  margin-left: 610px;
+   border: 1px solid #ACD3F2; 
+
+  text-align: left;
+  color: black;
+}
+
 .plusbasproduit {
   float: left;
   /* display: flex; */
@@ -495,11 +555,11 @@ background-color:whitesmoke;
   width: 1105px;
   margin-left: 260px;
   height: 42px;
-  background-color: #D8EAFF;
-   border: 1px solid #ACD3F2; 
+  background-color: whitesmoke;
+   border: 1px solid #F8D7DA; 
   margin-right: 0px;
   text-align: left;
-  color: black;
+  color: red;
   font-weight: bold;
 }
 
@@ -508,11 +568,27 @@ background-color:whitesmoke;
   width: 1105px;
   margin-left: 260px;
   height: 42px;
-  background-color: #D8EAFF;
-   border: 1px solid #ACD3F2; 
+  background-color: whitesmoke;
+ /* // background-color: #D8EAFF; */
+  /* // border: 1px solid #ACD3F2;  */
+   border: 1px solid #F8D7DA; 
   margin-right: 0px;
   text-align: left;
-  color: black;
+  color: red;
+  font-weight: bold;
+}
+
+.topproduit {
+  float: left;
+  width: 1105px;
+  margin-left: 260px;
+  height: 62px;
+ 
+  background-color: whitesmoke;
+   border: 1px solid #F8D7DA; 
+  margin-right: 0px;
+  text-align: left;
+  color: red;
   font-weight: bold;
 }
 
@@ -823,7 +899,8 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
   height: 50px;
   margin-bottom: 0px;
 
-  color: #135d74;
+  color: #c21616;
+ 
 
 }
 
